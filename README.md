@@ -8,4 +8,4 @@ Set the database settings in includes/db.php
 For access the admin panel,
 
 username:a
-passowrd:a
+password:a
