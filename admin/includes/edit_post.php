@@ -67,6 +67,8 @@ $select_posts_by_id = mysqli_query($connection, $query);
 
                   confirmQuery($update_post);
 
+                  echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id={$the_post_id}'>View Post</a> or <a href='../posts.php'>Edit More Posts</a></p>";
+
                   
 
                   
@@ -149,7 +151,7 @@ $select_posts_by_id = mysqli_query($connection, $query);
 
        } else {
 
-         echo "<option value='published'> Publish</option>";
+         echo "<option value='published'>Publish</option>";
 
        }
 
@@ -176,7 +178,7 @@ $select_posts_by_id = mysqli_query($connection, $query);
       
       <div class="form-group">
          <label for="post_content">Post Content</label>
-         <textarea  class="form-control "name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?>
+         <textarea id="body" class="form-control "name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?>
          </textarea>
       </div>
       
