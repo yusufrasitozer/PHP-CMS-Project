@@ -37,7 +37,6 @@ if(!$select_user_query) {
 
 }
 
-$password = crypt($password, $db_user_password);
 
 if($username !== $db_username && $password !== $db_user_password) {
 
