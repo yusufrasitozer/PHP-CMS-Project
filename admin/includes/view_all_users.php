@@ -95,7 +95,7 @@ $select_users = mysqli_query($connection, $query);
 
                        
 
-                        echo "<td><a href ='users.php?delete={$user_id}'>Delete</a></td>";
+                        echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" href ='users.php?delete={$user_id}'>Delete</a></td>";
 
                          echo "</tr>";
 
